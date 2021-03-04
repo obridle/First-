@@ -1,4 +1,6 @@
-# clean-shutdown
+# Cello clean-shutdown
+
+This is a modification of the clean-shutdown supplied by pimoroni to add in a 20x16 LCD screen to display critical infomtation for headless platforms using a raspberry pi. 
 
 `clean-shutdown` is a simple daemon that monitors a user-specified GPIO pin and triggers a clean software shutdown when that pin is asserted low. It offers ways to customise the behaviour of the shutdown process to fit most use-cases.
 
