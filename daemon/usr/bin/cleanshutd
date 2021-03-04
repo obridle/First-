@@ -86,6 +86,7 @@ while true; do
             msg="BCM $trigger_pin held low, system shutdown in $shutdown_delay minutes"
             echo $msg
             wall $msg
+            sh ./etc/Cello/CelloStop.sh
             daemon="off"
             shutdown -h +$shutdown_delay
             break
