@@ -120,7 +120,7 @@ def main():
 
     # Send some test
     lcd_string(" Cello Systems ",LCD_LINE_1)
-    lcd_string(" CelloConf TV  ",LCD_LINE_2)
+    lcd_string(" Procuct Name  ",LCD_LINE_2)
 
     time.sleep(3)
   
@@ -129,7 +129,7 @@ def main():
 
     # Send some more text
     lcd_string(str(IP),LCD_LINE_1)
-    lcd_string("http://ip:8000",LCD_LINE_2)
+    lcd_string("Prodcut Info",LCD_LINE_2)
 
     time.sleep(3)
 
