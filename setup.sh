@@ -246,6 +246,7 @@ sudo cp ./daemon/etc/cleanshutd.conf /etc/
 if [ "$PRODUCT" == "onoffshim" ]; then
     echo -e "\nInstalling GPIO Power Off support...\n"
     sudo cp ./daemon/lib/systemd/system-shutdown/gpio-poweroff /lib/systemd/system-shutdown/gpio-poweroff
+    sudo chmod +x /lib/systemd/system-shutdown/gpio-poweroff 
     echo -e "\nApplying default settings for OnOff SHIM..."
     config_set trigger_pin 17
     config_set poweroff_pin 4
