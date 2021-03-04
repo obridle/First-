@@ -237,7 +237,7 @@ sudo cp ./daemon/etc/init.d/cleanshutd /etc/init.d/
 sudo cp ./daemon/usr/bin/cleanshutd /usr/bin/
 sudo cp -r ./daemon/etc/Cello/ /etc/
 sudo chmod +x /etc/Cello/*
-sudo chmod +x /usr/bin/cleanshutd
+sudo chmod +x /etc/init.d/cleanshutd
 
 sudo systemctl daemon-reload
 sudo systemctl enable cleanshutd
