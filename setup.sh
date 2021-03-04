@@ -235,7 +235,8 @@ echo -e "\nInstalling daemon..."
 
 sudo cp ./daemon/etc/init.d/cleanshutd /etc/init.d/
 sudo cp ./daemon/usr/bin/cleanshutd /usr/bin/
-sudo cp ./daemon/etc/Cello/ /etc/Cello/
+sudo cp -r ./daemon/etc/Cello/ /etc/
+sudo chmod +x /etc/Cello/*
 sudo chmod +x /usr/bin/cleanshutd
 
 sudo systemctl daemon-reload
